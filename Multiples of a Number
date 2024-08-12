@@ -1,0 +1,13 @@
+def print_multiples(num, limit):
+    multiples = []
+    current = num
+    
+    while current <= limit:
+        multiples.append(current)
+        current += num
+    
+    print(', '.join(map(str, multiples)))
+
+num = 3
+limit = 20
+print_multiples(num, limit)
